@@ -16,15 +16,17 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Function to open links in new tab safely
+  // Navigate to a URL safely
   const openLink = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.focus();
   };
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      {/* Hero content */}
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col sm:flex-row items-start gap-5 z-10`}
       >
         {/* Left indicator line */}
         <div className='flex flex-col justify-center items-center mt-5'>
@@ -74,20 +76,20 @@ const Hero = () => {
 
           {/* Resume button */}
           <a
-            href="/resume.pdf" // Place resume.pdf in public folder
+            href="https://drive.google.com/file/d/1-zyL-CW6dCWkaf12ZYfDfqbs2NKvT3Xl/view?usp=share_link"
             download
             className="mt-4 bg-[#915EFF] text-white px-6 py-2 rounded-md hover:bg-[#7c45d7] font-medium w-max"
           >
-            Resume
+            My Resume
           </a>
         </div>
       </div>
 
       {/* 3D Canvas */}
-      <ComputersCanvas />
+      <ComputersCanvas className="pointer-events-none" />
 
       {/* Scroll down indicator */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
