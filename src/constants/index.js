@@ -1,30 +1,14 @@
 import {
-  mobile,
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+ 
   carrent,
   jobit,
-  tripguide,
   threejs,
 
 } from "../assets";
+
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -67,7 +51,7 @@ export const experiences = [
   {
     title: "MERN Developer",
     company_name: "Printedge India",
-    icon: starbucks,
+  logo: "/Printedge.png",
     iconBg: "#383E56",
     date: "June 2025 - August 2025",
     points: [
