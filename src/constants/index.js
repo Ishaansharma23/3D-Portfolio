@@ -137,12 +137,12 @@ export const projects = [
       { name: "nodejs", color: "pink-text-gradient" },
       { name: "ai", color: "blue-text-gradient" },
     ],
-    image: threejs,
+    image: "/edith.png",
     source_code_link: "https://github.com/Ishaansharma23/Edith-AI",
     live_link: "",
   },
   {
-    name: "NyaySahay (AI LegalTech Platform)",
+    name: "NyaySahay",
     description:
       "Developed a full-stack AI-powered LegalTech platform featuring real-time chat, video calling, and a personal AI legal chatbot that analyzes laws to provide actionable legal guidance. Enabled direct advocate consultations with paid interactions, media evidence uploads, and automated authority reporting via EmailJS using Socket.IO, WebRTC, and Node.js/Express REST APIs.",
     tags: [
@@ -151,23 +151,22 @@ export const projects = [
       { name: "socket.io", color: "pink-text-gradient" },
       { name: "nodejs", color: "blue-text-gradient" },
     ],
-    image: carrent,
+    image: "/nyaysahay.png",
     source_code_link: "https://github.com/Ishaansharma23/NyaySahayHack",
     live_link: "",
   },
-  {
-    name: "ApeAxis",
-    description:
-      "Worked on a professional frontend dashboard during internship, building high-quality UI components, smooth animations, and responsive layouts. Developed interactive dashboards with modern design patterns, focusing on performance, usability, and polished user experience for a production-grade web platform.",
-    tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "frontend", color: "green-text-gradient" },
-      { name: "animations", color: "pink-text-gradient" },
-      { name: "dashboard", color: "blue-text-gradient" },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/Ishaansharma23/ApeAxis",
-    live_link: "",
-  },
+    {
+      name: "ApeAxis",
+      description:
+        "Built a full-stack business automation and CRM platform that provides companies with intelligent chatbots for customer engagement. Implemented automated WhatsApp-based chatbots capable of sending messages, handling customer queries. Developed a scalable web dashboard to manage chatbot interactions and business data.",
+      tags: [
+        { name: "fullstack", color: "blue-text-gradient" },
+        { name: "crm", color: "green-text-gradient" },
+        { name: "chatbot", color: "pink-text-gradient" },
+        { name: "automation", color: "blue-text-gradient" },
+      ],
+      image: "/apeaxis.png",
+      source_code_link: "https://github.com/Ishaansharma23/ApeAxis",
+      live_link: "",
+    }
 ];
-
