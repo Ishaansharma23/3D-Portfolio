@@ -2,17 +2,15 @@ import {
   backend,
   creator,
   web,
- 
   carrent,
   jobit,
   threejs,
-
 } from "../assets";
-
 
 export const navLinks = [
   { id: "about", title: "About" },
   { id: "work", title: "Work" },
+  { id: "tech", title: "Tech" },
   { id: "contact", title: "Contact" },
 ];
 
@@ -24,42 +22,105 @@ export const services = [
 ];
 
 export const technologies = [
-  { name: "HTML 5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS 3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "React JS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Node JS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Express JS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "EJS", icon: "https://miro.medium.com/v2/resize:fit:1400/1*KKciGBpSE9sxj8aZ1Xdu-w.png" }, 
-  { name: "Handlebars", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg" },
-  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-  { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" },
-  { name: "Locomotive Scroll", icon: "https://miro.medium.com/v2/resize:fit:1400/1*Loeqb8G4mx_-abH0whKLyw.png" },
-  { name: "Redux Toolkit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-  { name: "Render", icon: "https://images.seeklogo.com/logo-png/53/1/render-logo-png_seeklogo-532232.png" },
   { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-  { name: "Tailwind CSS", icon: "https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png" },
-  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
-  { name: "Email JS", icon: "https://www.emailjs.com/logo.png" },
-];
 
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  {
+    name: "Next.js",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIy-mzDNwEgiWKpwsy_8CK9KSr6GEnCcpgQ&s",
+    invert: true,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+  { name: "Redux Toolkit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" },
+
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  {
+    name: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    invert: true,
+  },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  {
+    name: "EJS",
+    icon: "https://blog.openreplay.com/serving-dynamic-html-using-embedded-javascript-ejs/",
+    invert: true,
+  },
+  {
+    name: "Handlebars",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
+    invert: true,
+  },
+
+  {
+    name: "Socket.IO",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+    invert: true,
+  },
+  {
+    name: "WebSockets",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/1280px-WebSocket_colored_logo.svg.png",
+  },
+  {
+    name: "WebRTC",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/6/68/WebRTC_Logo.svg",
+    invert: true,
+  },
+
+  {
+    name: "JWT",
+    icon: "https://jwt.io/img/pic_logo.svg",
+    invert: true,
+  },
+  {
+    name: "Clerk Auth",
+    icon: "https://avatars.githubusercontent.com/u/87621839?s=200&v=4",
+  },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    invert: true,
+  },
+  { name: "Render", icon: "https://avatars.githubusercontent.com/u/36424661?s=200&v=4" },
+  { name: "EmailJS", icon: "https://avatars.githubusercontent.com/u/4430336?s=200&v=4" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+];
 
 export const experiences = [
   {
     title: "MERN Developer",
     company_name: "Printedge India",
-  logo: "/Printedge.png",
+    logo: "/Printedge.png",
     iconBg: "#383E56",
     date: "June 2025 - August 2025",
     points: [
       "Developed a full-stack web application with complete frontend and backend functionality.",
-      "Implemented secure user authentication with JWT, hashed passwords using bcrypt, and session management with cookies.",
-      "Built an interactive and responsive UI using React.js, incorporating animations with GSAP and smooth scrolling with Locomotive Scroll.",
-      "Handled end-to-end development including database design, server-side logic, API integration, and client-side rendering.",
-      "Ensured secure data handling and a seamless user experience across devices and browsers.",
+      "Implemented secure authentication using JWT, bcrypt, and cookie-based sessions.",
+      "Built responsive UIs with React, GSAP animations, and smooth scrolling.",
+      "Handled database design, APIs, and client-side rendering end-to-end.",
+      "Ensured performance, security, and cross-browser compatibility.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Qnnect",
+    logo: "/qnnect.png",
+    iconBg: "#1F2937",
+    date: "September 2025 – October 2025",
+    points: [
+      "Worked on a 1-on-1 live mentorship web platform, collaborating with a cross-functional team.",
+      "Built responsive frontend interfaces and integrated them with backend APIs.",
+      "Developed the complete frontend for an NGO website, independently handling layout, routing, and UI logic.",
+      "Gained hands-on experience in full-stack development, teamwork, and real-world project execution.",
     ],
   },
 ];
@@ -67,42 +128,46 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "JARVIS Voice Control",
+    name: "Edith AI",
     description:
-      "A voice-controlled AI assistant that responds to commands and performs tasks. Full-stack implementation with real-time interactions.",
+      "Built a full-stack real-time AI chat application with a responsive frontend, enabling instant conversations using Socket.IO and Gemini API for intelligent, context-aware responses. Implemented a secure Node.js/Express backend with JWT and cookie-based authentication, following a scalable MVC architecture.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
-      { name: "nodejs", color: "green-text-gradient" },
-      { name: "mongodb", color: "pink-text-gradient" },
+      { name: "socket.io", color: "green-text-gradient" },
+      { name: "nodejs", color: "pink-text-gradient" },
+      { name: "ai", color: "blue-text-gradient" },
     ],
-    image: threejs, // replace with actual project image if available
-    source_code_link: "https://github.com/Ishaansharma23/JARVIS",
-    live_link: "https://jarvis-q7d6.onrender.com",
+    image: threejs,
+    source_code_link: "https://github.com/Ishaansharma23/Edith-AI",
+    live_link: "",
   },
   {
-    name: "GTA Frontend Animations",
+    name: "NyaySahay (AI LegalTech Platform)",
     description:
-      "Frontend project with animations showcasing interactive page elements using React, GSAP, and Tailwind CSS.",
+      "Developed a full-stack AI-powered LegalTech platform featuring real-time chat, video calling, and a personal AI legal chatbot that analyzes laws to provide actionable legal guidance. Enabled direct advocate consultations with paid interactions, media evidence uploads, and automated authority reporting via EmailJS using Socket.IO, WebRTC, and Node.js/Express REST APIs.",
     tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "gsap", color: "green-text-gradient" },
-      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "legaltech", color: "blue-text-gradient" },
+      { name: "webrtc", color: "green-text-gradient" },
+      { name: "socket.io", color: "pink-text-gradient" },
+      { name: "nodejs", color: "blue-text-gradient" },
     ],
-    image: carrent, // replace with actual project image if available
-    source_code_link: "https://github.com/Ishaansharma23/GTA",
-    live_link: "https://gta-py7a.onrender.com",
+    image: carrent,
+    source_code_link: "https://github.com/Ishaansharma23/NyaySahayHack",
+    live_link: "",
   },
   {
-    name: "FUNDEASE",
+    name: "ApeAxis",
     description:
-      "A full-stack fundraising platform with complete frontend, backend, and a user dashboard for managing campaigns and donations.",
+      "Worked on a professional frontend dashboard during internship, building high-quality UI components, smooth animations, and responsive layouts. Developed interactive dashboards with modern design patterns, focusing on performance, usability, and polished user experience for a production-grade web platform.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
-      { name: "nodejs", color: "green-text-gradient" },
-      { name: "mongodb", color: "pink-text-gradient" },
+      { name: "frontend", color: "green-text-gradient" },
+      { name: "animations", color: "pink-text-gradient" },
+      { name: "dashboard", color: "blue-text-gradient" },
     ],
-    image: jobit, // replace with actual project image if available
-    source_code_link: "https://github.com/Ishaansharma23/FUNDEASE_",
-    live_link: "https://fundease.onrender.com",
+    image: jobit,
+    source_code_link: "https://github.com/Ishaansharma23/ApeAxis",
+    live_link: "",
   },
 ];
+
