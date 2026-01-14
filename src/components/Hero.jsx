@@ -86,7 +86,7 @@ const Hero = () => {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/1-zyL-CW6dCWkaf12ZYfDfqbs2NKvT3Xl/view?usp=share_link"
+            href="https://drive.google.com/file/d/1BxyJhfW1_dLrNIo-O3RB4cnW_W5RopSw/view?usp=share_link"
             target="_blank"
             rel="noreferrer"
             className="mt-4 bg-[#915EFF] text-white px-6 py-2 rounded-md hover:bg-[#7c45d7] font-medium w-max transition"
