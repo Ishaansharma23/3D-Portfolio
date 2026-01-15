@@ -139,7 +139,7 @@ export const projects = [
     ],
     image: "/edith.png",
     source_code_link: "https://github.com/Ishaansharma23/Edith-AI",
-    live_link: "",
+    live_link: "https://edith-ai-coral.vercel.app",
   },
   {
     name: "NyaySahay",
