@@ -17,14 +17,13 @@ export const navLinks = [
 export const services = [
   { title: "MERN Developer", icon: web },
   { title: "Backend Developer", icon: backend },
-  { title: "Frontend Developer", icon: creator },
+  { title: "Exposure to DevOps", icon: creator },
   { title: "AI Integration", icon: web },
 ];
 
 export const technologyCategories = [
   {
     category: "Frontend Development",
-    icon: "🎨",
     technologies: [
       { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
@@ -47,7 +46,6 @@ export const technologyCategories = [
   },
   {
     category: "Backend & Real-Time",
-    icon: "⚡",
     technologies: [
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       {
@@ -84,7 +82,6 @@ export const technologyCategories = [
   },
   {
     category: "DevOps & Cloud",
-    icon: "☁️",
     technologies: [
       { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
@@ -101,7 +98,6 @@ export const technologyCategories = [
   },
   {
     category: "AI & Automation",
-    icon: "🤖",
     technologies: [
       { name: "LangChain", icon: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4" },
       { name: "LangGraph", icon: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4" },
@@ -109,7 +105,6 @@ export const technologyCategories = [
   },
   {
     category: "Databases, Auth & Tools",
-    icon: "🛡️",
     technologies: [
       { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
       {
@@ -131,11 +126,24 @@ export const technologies = technologyCategories.flatMap(cat => cat.technologies
 
 export const experiences = [
   {
+    title: "DevOps Intern",
+    company_name: "Paytm",
+    logo: "/paytm.svg",
+    iconBg: "#FFFFFF",
+    date: "June to Present",
+    logoClass: "w-[85%] h-[85%] object-contain",
+    points: [
+      "Automated CI/CD pipelines using Jenkins, GitHub Actions, and Docker for seamless application deployments.",
+      "Containerized microservices and configured environment variables across dev, staging, and production environments.",
+    ],
+  },
+  {
     title: "Software Developer Intern",
     company_name: "Airtel Digital",
     logo: "/airtel.svg",
     iconBg: "#FFFFFF",
     date: "June to Aug",
+    logoClass: "w-[85%] h-[85%] object-contain",
     points: [
       "Built and optimized high-throughput microservices and RESTful APIs using Node.js and Express.",
       "Enhanced database queries and backend performance to handle large-scale user traffic efficiently.",
@@ -144,24 +152,12 @@ export const experiences = [
     ],
   },
   {
-    title: "DevOps Intern",
-    company_name: "Paytm",
-    logo: "/paytm.svg",
-    iconBg: "#FFFFFF",
-    date: "June to Present",
-    points: [
-      "Automated CI/CD pipelines using Jenkins, GitHub Actions, and Docker for seamless application deployments.",
-      "Managed and monitored AWS infrastructure including EC2, S3, and IAM security permissions.",
-      "Containerized microservices and configured environment variables across dev, staging, and production environments.",
-      "Monitored service metrics, logs, and container status to ensure high system uptime and reliability.",
-    ],
-  },
-  {
     title: "MERN Developer",
     company_name: "Printedge India",
     logo: "/Printedge.png",
     iconBg: "#383E56",
     date: "June 2025 - August 2025",
+    logoClass: "w-[100%] h-[100%] scale-125 object-contain",
     points: [
       "Developed a full-stack web application with complete frontend and backend functionality.",
       "Implemented secure authentication using JWT, bcrypt, and cookie-based sessions.",
@@ -176,6 +172,7 @@ export const experiences = [
     logo: "/qnnect.png",
     iconBg: "#1F2937",
     date: "September 2025 – October 2025",
+    logoClass: "w-[100%] h-[100%] object-contain",
     points: [
       "Worked on a 1-on-1 live mentorship web platform, collaborating with a cross-functional team.",
       "Built responsive frontend interfaces and integrated them with backend APIs.",

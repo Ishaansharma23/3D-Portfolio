@@ -8,7 +8,7 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   const lines = [
     "Full Stack Developer",
-    "Frontend Developer",
+    "Exposure to DevOps",
     "Backend Developer",
     "AI Integration Specialist",
   ];
