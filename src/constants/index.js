@@ -15,14 +15,18 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "MERN Developer", icon: web },
+  { title: "Full Stack Developer", icon: web },
   { title: "Backend Developer", icon: backend },
   {
     title: "DevOps",
     icon: creator,
     description: "Docker • CI/CD • Jenkins • AWS • EC2 • GitHub Actions",
   },
-  { title: "AI Integration", icon: web },
+  {
+    title: "AI Integration",
+    icon: web,
+    description: "LangChain • LangGraph • Embeddings",
+  },
 ];
 
 export const technologyCategories = [
@@ -228,6 +232,6 @@ export const projects = [
     ],
     image: "/nyaysahay.png",
     source_code_link: "https://github.com/Ishaansharma23/NyaySahayHack",
-    live_link: "",
+    live_link: "https://nyay-sahay-hack.vercel.app",
   },
 ];
