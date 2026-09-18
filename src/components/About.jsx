@@ -8,7 +8,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon, description }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -20,17 +20,23 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-6 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
-          alt='web-development'
+          alt={title}
           className='w-16 h-16 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
+
+        {description && (
+          <p className='text-secondary text-[12px] font-medium text-center mt-1 leading-snug'>
+            {description}
+          </p>
+        )}
       </div>
     </motion.div>
   </Tilt>
@@ -48,7 +54,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a passionate software developer with strong expertise in JavaScript and modern frameworks like React, Node.js, and MongoDB. I thrive on building efficient, scalable, and user-friendly applications that solve real-world problems. Quick to learn and collaborative by nature, I work closely with clients to turn ideas into impactful digital solutions. Let’s create something amazing together!
+        I’m a passionate Backend & Full-Stack Developer with strong expertise in JavaScript, React, Node.js, and MongoDB. I enjoy building efficient, scalable, and real-world applications with a focus on robust backend systems, APIs, and seamless user experiences. Alongside development, I have practical exposure to DevOps and cloud technologies, including Docker, CI/CD, Jenkins, AWS, and EC2. I’m a quick learner and collaborative developer who enjoys turning ideas into reliable, impactful digital solutions.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

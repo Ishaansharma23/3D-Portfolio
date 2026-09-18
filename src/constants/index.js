@@ -17,7 +17,11 @@ export const navLinks = [
 export const services = [
   { title: "MERN Developer", icon: web },
   { title: "Backend Developer", icon: backend },
-  { title: "Exposure to DevOps", icon: creator },
+  {
+    title: "DevOps",
+    icon: creator,
+    description: "Docker • CI/CD • Jenkins • AWS • EC2 • GitHub Actions",
+  },
   { title: "AI Integration", icon: web },
 ];
 
@@ -130,7 +134,7 @@ export const experiences = [
     company_name: "Paytm",
     logo: "/paytm.svg",
     iconBg: "#FFFFFF",
-    date: "June to Present",
+    date: "Aug 2026 - Present",
     logoClass: "w-[85%] h-[85%] object-contain",
     points: [
       "Automated CI/CD pipelines using Jenkins, GitHub Actions, and Docker for seamless application deployments.",
@@ -142,7 +146,7 @@ export const experiences = [
     company_name: "Airtel Digital",
     logo: "/airtel.svg",
     iconBg: "#FFFFFF",
-    date: "June to Aug",
+    date: "June 2026 - Aug 2026",
     logoClass: "w-[85%] h-[85%] object-contain",
     points: [
       "Built and optimized high-throughput microservices and RESTful APIs using Node.js and Express.",
