@@ -21,81 +21,141 @@ export const services = [
   { title: "AI Integration", icon: web },
 ];
 
-export const technologies = [
-  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+export const technologyCategories = [
   {
-    name: "Next.js",
-    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIy-mzDNwEgiWKpwsy_8CK9KSr6GEnCcpgQ&s",
-    invert: true,
+    category: "Frontend Development",
+    icon: "🎨",
+    technologies: [
+      { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        invert: true,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+      { name: "Redux Toolkit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+      { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" },
+      { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+    ],
   },
   {
-    name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
-  { name: "Redux Toolkit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-  { name: "GSAP", icon: "https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg" },
-
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  {
-    name: "Express.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-    invert: true,
-  },
-  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  {
-    name: "EJS",
-    icon: "https://blog.openreplay.com/serving-dynamic-html-using-embedded-javascript-ejs/",
-    invert: true,
-  },
-  {
-    name: "Handlebars",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
-    invert: true,
-  },
-
-  {
-    name: "Socket.IO",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-    invert: true,
-  },
-  {
-    name: "WebSockets",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/1280px-WebSocket_colored_logo.svg.png",
-  },
-  {
-    name: "WebRTC",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/6/68/WebRTC_Logo.svg",
-    invert: true,
-  },
-
-  {
-    name: "JWT",
-    icon: "https://jwt.io/img/pic_logo.svg",
-    invert: true,
+    category: "Backend & Real-Time",
+    icon: "⚡",
+    technologies: [
+      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      {
+        name: "Express.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+        invert: true,
+      },
+      { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      {
+        name: "Socket.IO",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
+        invert: true,
+      },
+      {
+        name: "WebSockets",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/1280px-WebSocket_colored_logo.svg.png",
+      },
+      {
+        name: "WebRTC",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/6/68/WebRTC_Logo.svg",
+        invert: true,
+      },
+      {
+        name: "EJS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+        invert: true,
+      },
+      {
+        name: "Handlebars",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original.svg",
+        invert: true,
+      },
+    ],
   },
   {
-    name: "Clerk Auth",
-    icon: "https://avatars.githubusercontent.com/u/87621839?s=200&v=4",
+    category: "DevOps & Cloud",
+    icon: "☁️",
+    technologies: [
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+      { name: "Jenkins", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
+      { name: "CI/CD Pipelines", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        invert: true,
+      },
+      { name: "Render", icon: "https://avatars.githubusercontent.com/u/36424661?s=200&v=4" },
+    ],
   },
-  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   {
-    name: "GitHub",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    invert: true,
+    category: "AI & Automation",
+    icon: "🤖",
+    technologies: [
+      { name: "LangChain", icon: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4" },
+      { name: "LangGraph", icon: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4" },
+    ],
   },
-  { name: "Render", icon: "https://avatars.githubusercontent.com/u/36424661?s=200&v=4" },
-  { name: "EmailJS", icon: "https://avatars.githubusercontent.com/u/4430336?s=200&v=4" },
-  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-  { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+  {
+    category: "Databases, Auth & Tools",
+    icon: "🛡️",
+    technologies: [
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      {
+        name: "JWT",
+        icon: "https://jwt.io/img/pic_logo.svg",
+        invert: true,
+      },
+      {
+        name: "Clerk Auth",
+        icon: "https://avatars.githubusercontent.com/u/87621839?s=200&v=4",
+      },
+      { name: "EmailJS", icon: "https://avatars.githubusercontent.com/u/4430336?s=200&v=4" },
+      { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+    ],
+  },
 ];
 
+export const technologies = technologyCategories.flatMap(cat => cat.technologies);
+
 export const experiences = [
+  {
+    title: "Software Developer Intern",
+    company_name: "Airtel Digital",
+    logo: "/airtel.svg",
+    iconBg: "#FFFFFF",
+    date: "June to Aug",
+    points: [
+      "Built and optimized high-throughput microservices and RESTful APIs using Node.js and Express.",
+      "Enhanced database queries and backend performance to handle large-scale user traffic efficiently.",
+      "Integrated responsive UI components with microservices in collaboration with frontend engineers.",
+      "Implemented robust error handling, security protocols, and scalable architecture best practices.",
+    ],
+  },
+  {
+    title: "DevOps Intern",
+    company_name: "Paytm",
+    logo: "/paytm.svg",
+    iconBg: "#FFFFFF",
+    date: "June to Present",
+    points: [
+      "Automated CI/CD pipelines using Jenkins, GitHub Actions, and Docker for seamless application deployments.",
+      "Managed and monitored AWS infrastructure including EC2, S3, and IAM security permissions.",
+      "Containerized microservices and configured environment variables across dev, staging, and production environments.",
+      "Monitored service metrics, logs, and container status to ensure high system uptime and reliability.",
+    ],
+  },
   {
     title: "MERN Developer",
     company_name: "Printedge India",
