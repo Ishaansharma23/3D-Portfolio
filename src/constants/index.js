@@ -189,18 +189,32 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "Edith AI",
+    name: "CineVerse",
     description:
-      "Built a full-stack real-time AI chat application with a responsive frontend, enabling instant conversations using Socket.IO and Gemini API for intelligent, context-aware responses. Implemented a secure Node.js/Express backend with JWT and cookie-based authentication, following a scalable MVC architecture.",
+      "Production-grade AI-powered movie ticket booking platform with an autonomous AI booking agent, real-time seat locking, personalized recommendations, payments, and AWS deployment.",
+    tags: [
+      { name: "mern", color: "blue-text-gradient" },
+      { name: "langchain", color: "green-text-gradient" },
+      { name: "docker", color: "pink-text-gradient" },
+      { name: "aws", color: "blue-text-gradient" },
+    ],
+    image: "/cineverse.png",
+    source_code_link: "https://github.com/Ishaansharma23/CineVerse",
+    live_link: "https://ec2-35-154-245-230.ap-south-1.compute.amazonaws.com",
+  },
+  {
+    name: "CodeArena",
+    description:
+      "Full-stack real-time coding interview and practice platform with live video, chat, collaborative code editing, code execution, and AI-powered mock interviews.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
-      { name: "socket.io", color: "green-text-gradient" },
-      { name: "nodejs", color: "pink-text-gradient" },
-      { name: "ai", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "monaco", color: "pink-text-gradient" },
+      { name: "gemini", color: "blue-text-gradient" },
     ],
-    image: "/edith.png",
-    source_code_link: "https://github.com/Ishaansharma23/Edith-AI",
-    live_link: "https://edith-ai-coral.vercel.app",
+    image: "/codearena.png",
+    source_code_link: "https://github.com/Ishaansharma23/CodeArena",
+    live_link: "https://code-arena-sable.vercel.app",
   },
   {
     name: "NyaySahay",
@@ -216,18 +230,4 @@ export const projects = [
     source_code_link: "https://github.com/Ishaansharma23/NyaySahayHack",
     live_link: "",
   },
-    {
-      name: "ApeAxis",
-      description:
-        "Built a full-stack business automation and CRM platform that provides companies with intelligent chatbots for customer engagement. Implemented automated WhatsApp-based chatbots capable of sending messages, handling customer queries. Developed a scalable web dashboard to manage chatbot interactions and business data.",
-      tags: [
-        { name: "fullstack", color: "blue-text-gradient" },
-        { name: "crm", color: "green-text-gradient" },
-        { name: "chatbot", color: "pink-text-gradient" },
-        { name: "automation", color: "blue-text-gradient" },
-      ],
-      image: "/apeaxis.png",
-      source_code_link: "https://github.com/Ishaansharma23/ApeAxis",
-      live_link: "",
-    }
 ];
